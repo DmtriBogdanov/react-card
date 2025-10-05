@@ -1,5 +1,6 @@
 import './App.css'
 import {Card} from "./components/Card/Card";
+import type {CardType} from "./types.ts";
 
 type AppPropsType = {
   data: CardType[]

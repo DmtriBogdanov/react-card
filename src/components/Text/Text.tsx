@@ -1,7 +1,11 @@
 import styled from "styled-components";
 import {myTheme} from "../../styles/Theme.styled.tsx";
 
-export const Text = ({text}) => {
+type TextPropsType = {
+  text: string
+}
+
+export const Text = ({text}:TextPropsType) => {
   return (
     <StyledText>{text}</StyledText>
   );

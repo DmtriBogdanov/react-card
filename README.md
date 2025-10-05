@@ -2,6 +2,6 @@
 
 # 🚀 Карточка
 
-![Главный экран](./screenshots/main.png)
+[![Главный экран](./screenshots/main.png)](https://dmtribogdanov.github.io/react-card/)
 
 

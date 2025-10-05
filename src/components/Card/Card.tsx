@@ -5,6 +5,7 @@ import {Title} from "../Title/Title.tsx";
 import {Text} from "../Text/Text.tsx";
 import {Button} from "../Button/Button.tsx";
 import './Card.css'
+import type {ButtonType} from "../../types.ts";
 
 type CardPropsType = {
   imgSrc: string;

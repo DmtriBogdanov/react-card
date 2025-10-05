@@ -1,7 +1,11 @@
 import styled from "styled-components";
 import {myTheme} from "../../styles/Theme.styled.tsx";
 
-export const Title = ({title}) => {
+type TitlePropsType = {
+  title: string
+}
+
+export const Title = ({title}: TitlePropsType) => {
   return (
     <StyledTitle>{title}</StyledTitle>
   );

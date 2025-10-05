@@ -4,19 +4,9 @@ import {GlobalStyle} from "./styles/GlobalStyles";
 import {ThemeProvider} from "styled-components";
 import {myTheme} from "./styles/Theme.styled";
 import imageCard from "./assets/img/image-card.png";
+import type {CardType} from "./types.ts";
 
-type ButtonType = {
-  titleBtn: string;
-  color: string;
-}
 
-type CardType = {
-  imgSrc: string;
-  imgAlt: string;
-  title: string;
-  text: string;
-  buttons: ButtonType[];
-}
 const dataCards: CardType[] = [
   {
     imgSrc: imageCard,
