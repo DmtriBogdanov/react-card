@@ -1,0 +1,12 @@
+.card__content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 20px;
+}
+
+.card__buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
