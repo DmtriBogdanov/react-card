@@ -5,17 +5,15 @@ import {Title} from "../Title/Title.tsx";
 import {Text} from "../Text/Text.tsx";
 import {Button} from "../Button/Button.tsx";
 import './Card.css'
-import type {ButtonType} from "../../types.ts";
 
 type CardPropsType = {
   imgSrc: string;
   imgAlt: string;
   title: string;
   text: string;
-  buttons: ButtonType[];
 }
 
-export const Card = ({imgSrc, imgAlt, title, text, buttons}: CardPropsType) => {
+export const Card = ({imgSrc, imgAlt, title, text}: CardPropsType) => {
   return (
     <StyledCard>
       <Image src={imgSrc} alt={imgAlt}/>
@@ -23,13 +21,8 @@ export const Card = ({imgSrc, imgAlt, title, text, buttons}: CardPropsType) => {
         <Title title={title}/>
         <Text text={text}/>
         <div className="card__buttons">
-          {buttons.map((button, index) => (
-            <Button
-              key = {index}
-              titleBtn = {button.titleBtn}
-              color = {button.color}
-            />
-          ))}
+          <Button titleBtn="See more" color={myTheme.colors.accent}/>
+          <Button titleBtn="Save" color={myTheme.colors.accent}/>
         </div>
       </div>
     </StyledCard>

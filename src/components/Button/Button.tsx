@@ -23,7 +23,7 @@ const StyledButton = styled.button<StyledBtnPropsType>`
   justify-content: center;
   border: 2px solid ${props => props.color};
   border-radius: 5px;
-  min-width: 86px;
+  max-width: 86px;
   width: 100%;
   padding: 5px 0;
   color: ${props => props.color};

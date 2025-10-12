@@ -16,8 +16,7 @@ function App({data}: AppPropsType) {
           imgAlt = {card.imgAlt}
           title = {card.title}
           text = {card.text}
-          buttons = {card.buttons}
-        ></Card>
+        />
       ))}
 
     </div>
