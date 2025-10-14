@@ -4,7 +4,6 @@ import {Image} from "../Images/Images.tsx";
 import {Title} from "../Title/Title.tsx";
 import {Text} from "../Text/Text.tsx";
 import {Button} from "../Button/Button.tsx";
-import './Card.css'
 
 type CardPropsType = {
   imgSrc: string;
@@ -17,14 +16,14 @@ export const Card = ({imgSrc, imgAlt, title, text}: CardPropsType) => {
   return (
     <StyledCard>
       <Image src={imgSrc} alt={imgAlt}/>
-      <div className="card__content">
+      <ContentCard>
         <Title title={title}/>
         <Text text={text}/>
-        <div className="card__buttons">
+        <ButtonsBox>
           <Button titleBtn="See more" color={myTheme.colors.accent}/>
           <Button titleBtn="Save" color={myTheme.colors.accent}/>
-        </div>
-      </div>
+        </ButtonsBox>
+      </ContentCard>
     </StyledCard>
   );
 };
@@ -37,6 +36,19 @@ const StyledCard = styled.article`
   max-width: 300px;
   border-radius: 15px;
   background-color: ${myTheme.colors.light};
+`
+
+const ContentCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px 12px;
+  gap: 20px;
+`
+
+const ButtonsBox = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 12px;
 `
 
 
