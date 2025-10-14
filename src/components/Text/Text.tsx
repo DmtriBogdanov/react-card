@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import {myTheme} from "../../styles/Theme.styled.tsx";
+import type {CardType} from "../../types";
 
 type TextPropsType = {
-  text: string
+  text: CardType["text"],
 }
 
 export const Text = ({text}:TextPropsType) => {

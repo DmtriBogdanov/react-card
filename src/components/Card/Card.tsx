@@ -4,12 +4,13 @@ import {Image} from "../Images/Images.tsx";
 import {Title} from "../Title/Title.tsx";
 import {Text} from "../Text/Text.tsx";
 import {Button} from "../Button/Button.tsx";
+import type {CardType} from "../../types";
 
 type CardPropsType = {
-  imgSrc: string;
-  imgAlt: string;
-  title: string;
-  text: string;
+  imgSrc: CardType["imgSrc"];
+  imgAlt: CardType["imgAlt"];
+  title: CardType["title"];
+  text: CardType["text"];
 }
 
 export const Card = ({imgSrc, imgAlt, title, text}: CardPropsType) => {

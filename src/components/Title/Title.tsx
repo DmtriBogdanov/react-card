@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import {myTheme} from "../../styles/Theme.styled.tsx";
+import type {CardType} from "../../types";
 
 type TitlePropsType = {
-  title: string
+  title: CardType["title"],
 }
 
 export const Title = ({title}: TitlePropsType) => {

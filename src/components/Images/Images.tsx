@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import type {CardType} from "../../types";
 
 type ImagesPropsType = {
-  src: string,
-  alt: string,
+  src: CardType["imgSrc"],
+  alt: CardType["imgAlt"],
 }
 
 export const Image = ({src, alt}: ImagesPropsType) => {
